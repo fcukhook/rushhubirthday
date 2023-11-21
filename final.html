@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffd700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .birthday-card {
+      background-color: #ff6f61;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: bounce 1s ease infinite alternate;
+    }
+    @keyframes bounce {
+      0% { transform: translateY(-10px); }
+      100% { transform: translateY(10px); }
+    }
+    h1 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+      font-size: 18px;
+    }
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ffc0cb;
+      box-shadow: 20px 20px 50px rgba(255, 192, 203, 0.8),
+                  -20px -20px 50px rgba(255, 192, 203, 0.8);
+      animation: confetti-fall 3s linear infinite;
+    }
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+    /* Add more CSS to style the card */
+    .next-button {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .next-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #ff6f61;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .next-button a:hover {
+      background-color: #ffccc9;
+    }
+  </style>
+</head>
+<body>
+  <div class="birthday-card">
+    <h1>Happy Birthday!</h1>
+    <p>Dear RUSHMITHA,</p>
+    <p>SOODI LEKUNDA ...Wishing you a day filled with joy, laughter, and all the things that make you smile!</p>
+    <p>Cheers to another amazing year ahead!</p>
+    <p>Best wishes,</p>
+    <p>SHIVA REDDY</p>
+    <div class="next-button">
+      <a href="last.html">Next</a>
+    </div>
+  </div>
+  <div class="confetti"></div>
+</body>
+</html>
